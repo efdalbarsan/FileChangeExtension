@@ -169,6 +169,8 @@ public class MainActivity extends AppCompatActivity {
         btnNewList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                arrayAdapterLstFiles.clear();
+                getAllFile(dirPath);
                 lstFiles.setAdapter(arrayAdapterLstFiles);
             }
         });
@@ -287,6 +289,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("Rename : ", "False");
 
         }
+        this.getAllFolder();
 
     }
 
