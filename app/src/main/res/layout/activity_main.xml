@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtConvert"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="39dp"
+        android:text="From"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spnSelectEx"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtEx"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFolders"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="49dp"
+        android:text="Folders"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lstFiles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="310dp"
+        android:text="Files"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lstNewFiles"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnSelectFile" />
+
+    <Spinner
+        android:id="@+id/spnSelectFile"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtFolders"
+        app:layout_constraintTop_toBottomOf="@+id/edtEx" />
+
+    <EditText
+        android:id="@+id/edtEx"
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/spnSelectFile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtTo"
+        app:layout_constraintTop_toBottomOf="@+id/spnSelectEx" />
+
+    <TextView
+        android:id="@+id/txtTo"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="38dp"
+        android:text="To"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFolders"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConvert" />
+
+    <Button
+        android:id="@+id/btnNewList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="100dp"
+        android:text="Convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lstFiles" />
+
+    <ListView
+        android:id="@+id/lstNewFiles"
+        android:layout_width="213dp"
+        android:layout_height="3dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ListView
+        android:id="@+id/lstFiles"
+        android:layout_width="357dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNewList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFolders" />
+
+    <Button
+        android:id="@+id/btnNewConvert"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:text="New Convert"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewList" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
