@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     ListView lstNewFiles;
     EditText edtEx;
     Button btnNewList;
-    Button btnNewConvert;
+    //Button btnNewConvert;
     Spinner spnSelectEx;
     ArrayList<String> arrayList = new ArrayList<>();
     ArrayList<String> arrayListEx = new ArrayList<>();
@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         edtEx = findViewById(R.id.edtEx);
         btnNewList = findViewById(R.id.btnNewList);
         spnSelectEx = findViewById(R.id.spnSelectEx);
-        btnNewConvert = findViewById(R.id.btnNewConvert);
+        //btnNewConvert = findViewById(R.id.btnNewConvert);
 
         arrayListEx.add("png");
         arrayListEx.add("txt");
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnNewConvert.setOnClickListener(new View.OnClickListener() {
+        /*btnNewConvert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                 });
                 alert.show();
             }
-        });
+        });*/
 
     }
 
